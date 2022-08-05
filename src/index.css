@@ -13,3 +13,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul {
+  list-style: none;
+}
+
+input {
+  margin: 8px;
+  border: solid rgb(81, 7, 29);
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-left: 12px;
+  font-size: 26px;
+}
+input:focus {
+  background-color: rgba(95, 198, 233, 0.188);
+  outline: none;
+}
+input:placeholder {
+  color: rgba(107, 14, 81, 0.464);
+  font-size: 1.5em;
+}
