@@ -1,0 +1,54 @@
+::-webkit-scrollbar {
+    border-radius: 20px;
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(193, 77, 112, 0.581);
+    border-radius: 20px;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+      inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+  }
+
+.contacts-list {
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+  margin: 14px 0 30px 6px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  border: solid rgb(81, 7, 29);
+  padding-top: 10px;
+  overflow-y: scroll;
+  padding-left: 20px;
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+  height: 260px;
+  list-style: none;
+  &__item {
+    font-size: 22px;
+    align-items: center;
+    min-height: 30px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    border-bottom: 1px dashed rgba(214, 89, 126, 0.3);
+
+    &__remove-contact-button {
+      border: 1px solid rgb(76, 0, 23);
+      background-color: rgba(193, 77, 112, 0.305);
+      font-size: 8px;
+      border-radius: 50px;
+      height: 16px;
+      width: 64px;
+      cursor: pointer;
+
+      &:active {
+        border: solid rgb(123, 12, 45);
+        background-color: rgba(193, 77, 112, 0.458);
+      }
+    }
+  }
+}
